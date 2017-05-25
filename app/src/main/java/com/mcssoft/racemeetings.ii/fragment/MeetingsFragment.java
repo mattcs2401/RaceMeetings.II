@@ -1,12 +1,10 @@
 package com.mcssoft.racemeetings.ii.fragment;
 
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -24,8 +22,6 @@ import com.mcssoft.racemeetings.ii.database.SchemaConstants;
 import com.mcssoft.racemeetings.ii.interfaces.IMeetingItemClickListener;
 import com.mcssoft.racemeetings.ii.utility.ListingDivider;
 import com.mcssoft.racemeetings.ii.utility.Resources;
-
-import java.util.Set;
 
 public class MeetingsFragment extends Fragment
         implements IMeetingItemClickListener {
@@ -68,9 +64,12 @@ public class MeetingsFragment extends Fragment
                     showTitle("All Meetings");
                 }
             }
+            setMeetingAdapter();
+            setRecyclerView(rootView);
+
+        } else if(isEmptyView) {
+            setMeetingAdapter();
         }
-        setMeetingAdapter();
-        setRecyclerView(rootView);
 
     }
 

@@ -18,11 +18,19 @@
     </android.support.design.widget.AppBarLayout>
 
     <!-- Fragment container. -->
-    <FrameLayout
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/id_container">-->
+        <!--&lt;!&ndash;app:layout_behavior="@string/appbar_scrolling_view_behavior">&ndash;&gt;-->
+    <!--</FrameLayout>-->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/id_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/id_container">
-    </FrameLayout>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <!--android:paddingTop="?actionBarSize" />-->
 
     <include layout="@layout/nav_drawer"/>
 
