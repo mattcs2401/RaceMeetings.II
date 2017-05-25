@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <include layout="@layout/toolbar"
-            android:id="@+id/id_toolbar"/>
+            android:id="@+id/id_tb_meetings"/>
 
     </android.support.design.widget.AppBarLayout>
 

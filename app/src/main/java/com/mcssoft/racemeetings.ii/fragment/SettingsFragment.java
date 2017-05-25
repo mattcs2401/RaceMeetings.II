@@ -4,20 +4,18 @@ import android.preference.PreferenceFragment;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.mcssoft.racemeetings.ii.R;
-import com.mcssoft.racemeetings.ii.utility.Resources;
 
 public class SettingsFragment extends PreferenceFragment
         implements SharedPreferences.OnSharedPreferenceChangeListener {
     //<editor-fold defaultstate="collapsed" desc="Region: Lifecycle">
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_settings, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_settings, container, false);
         addPreferencesFromResource(R.xml.preferences);
         sharedPreferences = getPreferenceManager().getSharedPreferences();
         return rootView;

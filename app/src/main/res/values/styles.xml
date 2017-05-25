@@ -16,7 +16,7 @@
     <style name="AppThemeBlue" parent="AppTheme">
         <item name="colorPrimary">@color/color_primary_blue</item>
         <item name="colorPrimaryDark">@color/color_primary_blue_dark</item>
-        <item name="colorAccent">@color/color_accent_pink</item>
+        <!--<item name="colorAccent">@color/color_accent_pink</item>-->
     </style>
 
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">

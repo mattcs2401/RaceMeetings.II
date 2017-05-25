@@ -153,12 +153,12 @@ public class MeetingsActivity extends AppCompatActivity
     }
 
     private void initialiseToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.id_toolbar);
+        toolbar = (Toolbar) findViewById(R.id.id_tb_meetings);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // set title.
-        TextView textView = (TextView) findViewById(R.id.id_tv_toolbar);
+        TextView textView = (TextView) toolbar.findViewById(R.id.id_tv_toolbar);
         textView.setText("Racemeetings II");
     }
 

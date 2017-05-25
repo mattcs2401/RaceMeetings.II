@@ -5,11 +5,20 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <ListView
-        android:id="@+id/android:list"
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/id_tb_settings"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Settings fragment container. -->
+    <FrameLayout
+        android:id="@+id/id_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal" />
-    <!--android:layout_marginTop="48dp"/>-->
 
 </android.support.design.widget.CoordinatorLayout>
