@@ -1,3 +1,62 @@
 <resources>
     <string name="app_name">HideOnScrollExample</string>
+
+    <!-- Nav drawer. -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Menu options. -->
+    <string name="menu_item_preferences">Preferences</string>
+    <string name="menu_item_delete">Delete Meetings</string>
+
+    <!-- URL info. -->
+    <string name="base_path">https://tatts.com/pagedata/racing</string>
+    <string name="race_day_listing">RaceDay.xml</string>
+
+    <!-- Messages. -->
+    <string name="raceday_download_msg">Retrieving today\'s meetings.</string>
+    <string name="raceday_download_withdate_msg">Retrieving meetings for</string>
+    <string name="racemeeting_download_msg">Retrieving races for meeting code</string>
+    <string name="download_msg_warn">\r\nThis could take a minute or more.</string>
+    <string name="raceday_meetinginfo_dowload_msg">Meeting information successfully retrieved.</string>
+    <string name="raceday_meeting_process_msg">Collating meeting information.\r\n\r\nThis could take a minute or more.</string>
+    <string name="all_meetings_removed">All meetings removed.</string>
+
+    <!-- Dialog messages. -->
+    <string name="network_connection_error">No active network connection exists.\r\n\r\nCheck your device settings.</string>
+    <string name="delete_dialog_text">These actions cannot be undone.</string>
+
+    <!-- Keys. -->
+    <string name="network_dialog_text">network_dialog_text</string>
+    <string name="meetings_db_rowid_key">meetings_rowid_key</string>
+    <string name="races_meeting_id_key">races_meeting_id_key</string>
+
+    <!-- Fragment tags.-->
+    <string name="meetings_fragment_tag">meetings_fragment_tag</string>
+    <string name="races_fragment_tag">races_fragment_tag</string>
+    <string name="date_select_fragment_tag">date_search_fragment_tag</string>
+    <string name="delete_dialog_fragment_tag">delete_dialog_fragment_tag</string>
+
+    <!-- Xml tags. -->
+    <string name="meetings_xml_tag">Meetings</string>
+    <string name="races_xml_tag">Races</string>
+    <string name="runners_xml_tag">Runners</string>
+
+    <!-- Button texts. -->
+    <string name="button_cancel_text">Cancel</string>
+    <string name="button_ok_text">OK</string>
+
+    <!-- Meeting preferences. -->
+    <string name="pref_meetings_show_today_key">pref_meetings_show_today_key</string>
+    <string name="pref_meetings_show_today_title">Show Meetings For Today</string>
+    <string name="pref_meetings_show_today_summary">Show today\'s meetings on application start.</string>
+
+    <string name="pref_meetings_save_key">pref_meetings_cache_key</string>
+    <string name="pref_meetings_save_title">Save Meetings</string>
+    <string name="pref_meetings_save_summary">Save Meetings previously downloaded.</string>
+
+    <!-- Dialog title. -->
+    <string name="title_dialog_delete">Delete Meetings</string>
+    <string name="title_dialog_network">Network Problem</string>
+
 </resources>
